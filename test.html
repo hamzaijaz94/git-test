@@ -1,0 +1,43 @@
+<html>
+
+
+<head>
+<title> Testing</title>
+</head>
+
+<body>
+
+	<h1>Hello World</h1>
+
+	<form>
+		Height:
+		<input type="number" name="height" id="height" value="height"><br>
+
+		width:
+		<input type="number" name="width" id="width" value="width"><br>
+
+		<input type="button" name="submit" onclick="calarea()" value="Get area"><br>
+		<input type="text"  id="result" name="result" size="8px">
+
+	</form>
+
+	<script lang="javascript" >
+		function calarea(argument) {
+			var w=document.getElementById('width').value;
+
+			var h=document.getElementById('height').value;
+
+			var area=w*h;
+
+			document.getElementById('result').value =area;
+
+			
+
+			
+		}
+		
+	</script>
+
+</body>
+
+</html>
